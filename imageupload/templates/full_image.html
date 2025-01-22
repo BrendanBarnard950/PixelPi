@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div style="margin: 10px;">
+        <div class="d-flex align-items-center">
+            <h5 class="card-title">{{ image.image.name }}</h5>
+        
+            <small>
+                <div class="d-flex align-items-center">
+                    &MediumSpace;         
+                    <div style="width: 15px; height: 15px; background-color: {{ image.hex_code }}; border: 1px solid #ccc; border-radius: 3px; margin: 5px"></div>
+                    <span class="me-2">{{ image.hex_code }}</span>
+                </div>
+            </small>
+        </div>
+        <a class="btn btn-danger" href="{% url 'view_images' %}" style="margin-top:10px;">Back</a>
+    </div>
+    <img src="{{ image.image.url }}" class="card-img">
+
+    
+{% endblock %}
