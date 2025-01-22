@@ -1,6 +1,8 @@
 # Running a PixelPi: Step-by-Step Guide
 
 This guide will help you set up and run PixelPi.
+THIS IS A TEST PROJECT. IT FEATURES VERY LITTLE SECURITY MEASURES AND MOST DJANGO DEFAULT SETTINGS HAVE BEEN LEFT UNCHANGED.
+Not for production use, be careful, don't sue me, all that good stuff
 
 ---
 

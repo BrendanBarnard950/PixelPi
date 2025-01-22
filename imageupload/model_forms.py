@@ -4,6 +4,9 @@ from .models import ImageColor
 from PIL import Image, UnidentifiedImageError
 
 class ImageUploadForm(ModelForm):
+    """
+    Form to handle image uploads
+    """
     class Meta:
         model = ImageColor
         fields = ['image']
@@ -70,6 +73,9 @@ class ImageUploadForm(ModelForm):
         return image
         
     def save(self):
+        """
+        Saves to database
+        """
         hex = self.extractCenterColour(self.cleaned_data['image'])
         self.instance.hex_code = hex
         super().save()    
